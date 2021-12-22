@@ -2,7 +2,7 @@ children = 0 <= 12
 teen = 13 <= 17
 adult = 18 <= 150 
 
-age = 30
+age = int(input('Enter your age: ')) # O comando input serve para coletar o dado
 
 
 if age < 13: 
