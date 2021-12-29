@@ -1,4 +1,4 @@
-# Função 3
+# Função 3 Este é mais letno pois aqui a lista é feita de forma manual
 
 def lista1():
     lista = []
@@ -10,7 +10,7 @@ print(lista1())
 
 
 
-# Função 4
+# Função 4 Este é mais rápida pois é feita de uma forma nativa da linguagem
 
 def lista2():
     return range(1000)
