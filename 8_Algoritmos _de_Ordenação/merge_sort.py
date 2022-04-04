@@ -34,3 +34,4 @@ def merge_sort(vetor):
 print(merge_sort([15, 34, 8, 3]))
 print(merge_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
 
+

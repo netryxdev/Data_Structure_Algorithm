@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbaa4713-3cc8-41fc-88c9-a4d0a858845a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/9_Árvores/1_arvoreBinaria_implementacao_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_Algoritmos _de_Ordenação/merge_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_Algoritmos _de_Ordenação/merge_sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,8 +76,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.shell_sort">
-    <configuration name="1_insercao" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.quick_sort">
+    <configuration name="quick_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Curso Estrutura de dados com python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,11 +85,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_Vetores_Ordenados" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8_Algoritmos _de_Ordenação" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_Vetores_Ordenados/1_insercao.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8_Algoritmos _de_Ordenação/quick_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.quick_sort" />
         <item itemvalue="Python.shell_sort" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test2" />
         <item itemvalue="Python.teste" />
-        <item itemvalue="Python.1_insercao" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +236,11 @@
           <url>file://$PROJECT_DIR$/8_Algoritmos _de_Ordenação/shell_sort.py</url>
           <line>14</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/8_Algoritmos _de_Ordenação/quick_sort.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
