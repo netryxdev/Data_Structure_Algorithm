@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbaa4713-3cc8-41fc-88c9-a4d0a858845a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/9_Árvores/1_arvoreBinaria_implementacao_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_Algoritmos _de_Ordenação/merge_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_Algoritmos _de_Ordenação/merge_sort.py" afterDir="false" />
-    </list>
+    <list default="true" id="cbaa4713-3cc8-41fc-88c9-a4d0a858845a" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
