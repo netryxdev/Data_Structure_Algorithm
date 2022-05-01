@@ -1,5 +1,5 @@
 # Árovores binárias de busca
-
+# Para visualizar acesse: webgraphviz.com
 class No:
     def __init__(self, valor):
         self.valor = valor
@@ -12,6 +12,7 @@ class No:
 class ArvoreBinariaBusca:
     def __init__(self):
         self.raiz = None
+        self.ligacoes = []
 
     def inserir(self, valor):
         novo = No(valor)
@@ -27,13 +28,26 @@ class ArvoreBinariaBusca:
                     atual = atual.esquerda
                     if atual == None:
                         pai.esquerda = novo
+                        self.ligacoes.append(str(pai.valor) + '->' + str(novo.valor))
                         return
                 # Direita
                 else:
                     atual = atual.direita
                     if atual == None:
                         pai.direita = novo
+                        self.ligacoes.append(str(pai.valor) + '->' + str(novo.valor))
                         return
+
+    def pesquisar(self, valor):
+        atual = self.raiz
+        while atual.valor != valor:
+            if valor < atual.valor:
+                atual = atual.esquerda
+            else:
+                atual = atual.direita
+            if atual == None:
+                return None
+        return atual
 
 ### INSERÇÃO e VISUALIZAÇÃO
 arvore = ArvoreBinariaBusca()
@@ -49,3 +63,5 @@ arvore.inserir(72)
 arvore.inserir(61)
 arvore.inserir(84)
 arvore.inserir(79)
+arvore.inserir(89)
+
