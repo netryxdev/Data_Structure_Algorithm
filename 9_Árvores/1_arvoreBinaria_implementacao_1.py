@@ -1,5 +1,8 @@
 # Árovores binárias de busca
 # Para visualizar acesse: webgraphviz.com
+from numpy import around
+
+
 class No:
     def __init__(self, valor):
         self.valor = valor
@@ -49,6 +52,28 @@ class ArvoreBinariaBusca:
                 return None
         return atual
 
+    # Raiz, esquerda, direita
+    def pre_ordem(self, no):
+        if no != None:
+            print(no.valor)
+            self.pre_ordem(no.esquerda)
+            self.pre_ordem(no.direita)
+
+    # Esquerda, raiz, direita (utilizado para imprimir em ordem crescente)
+    def em_ordem(self, no):
+        if no !=None:
+            self.em_ordem(no.esquerda)
+            print(no.valor)
+            self.em_ordem(no.direita)
+
+    # Esquerda, direita, raiz
+    def pos_ordem(self, no):
+        self.pos_ordem(no.esquerda)
+        self.pos_ordem(no.direita)
+        print(no.valor)
+
+
+
 ### INSERÇÃO e VISUALIZAÇÃO
 arvore = ArvoreBinariaBusca()
 arvore.inserir(53)
@@ -65,3 +90,6 @@ arvore.inserir(84)
 arvore.inserir(79)
 arvore.inserir(89)
 
+arvore.pesquisar(39)
+arvore.pesquisar(84)
+arvore.pesquisar(100)

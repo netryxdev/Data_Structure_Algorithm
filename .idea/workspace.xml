@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbaa4713-3cc8-41fc-88c9-a4d0a858845a" name="Default" comment="" />
+    <list default="true" id="cbaa4713-3cc8-41fc-88c9-a4d0a858845a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Árvores/1_arvoreBinaria_implementacao_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Árvores/1_arvoreBinaria_implementacao_1.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +75,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.quick_sort">
+  <component name="RunManager" selected="Python.test">
     <configuration name="quick_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Curso Estrutura de dados com python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,9 +183,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.quick_sort" />
         <item itemvalue="Python.shell_sort" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.test2" />
         <item itemvalue="Python.teste" />
       </list>
@@ -237,6 +240,11 @@
           <url>file://$PROJECT_DIR$/8_Algoritmos _de_Ordenação/quick_sort.py</url>
           <line>22</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
