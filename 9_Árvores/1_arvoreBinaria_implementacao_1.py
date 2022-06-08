@@ -31,14 +31,12 @@ class ArvoreBinariaBusca:
                     atual = atual.esquerda
                     if atual == None:
                         pai.esquerda = novo
-                        self.ligacoes.append(str(pai.valor) + '->' + str(novo.valor))
                         return
                 # Direita
                 else:
                     atual = atual.direita
                     if atual == None:
                         pai.direita = novo
-                        self.ligacoes.append(str(pai.valor) + '->' + str(novo.valor))
                         return
 
     def pesquisar(self, valor):
@@ -72,54 +70,84 @@ class ArvoreBinariaBusca:
         self.pos_ordem(no.direita)
         print(no.valor)
 
-      def excluir(self, valor):
-    if self.raiz == None:
-      print('A árvore está vazia')
-      return
+    def excluir(self, valor):
+      if self.raiz == None:
+        print('A árvore está vazia')
+        return
 
-    # Encontrar o nó
-    atual = self.raiz
-    pai = self.raiz
-    e_esquerda = True
-    while atual.valor != valor:
-      pai = atual
-      # Esquerda
-      if valor < atual.valor:
-        e_esquerda = True
+      # Encontrar o nó
+      atual = self.raiz
+      pai = self.raiz
+      e_esquerda = True
+      while atual.valor != valor:
+        pai = atual
+        # Esquerda
+        if valor < atual.valor:
+          e_esquerda = True
+          atual = atual.esquerda
+        # Direita
+        else:
+          e_esquerda = False
+          atual = atual.direita
+          if atual == None:
+            return False
+
+      # O nó a ser apagado é uma folha
+      if atual.esquerda == None and atual.direita == None:
+        if atual == self.raiz:
+          self.raiz = None
+        elif e_esquerda == True:
+          pai.esquerda = None
+        else:
+          pai.direita = None
+
+      # O nó a ser apagado não possui filho na direita
+      elif atual.direita == None:
+        if atual == self.raiz:
+          self.raiz = atual.esquerda
+        elif e_esquerda == True:
+          pai.esquerda = atual.esquerda
+        else:
+          pai.direita = atual.esquerda
+          
+      # O nó a ser apagado não possui filho na esquerda
+      elif atual.esquerda == None:
+        if atual == self.raiz:
+          self.raiz = atual.direita
+        elif e_esquerda == True:
+          pai.esquerda = atual.direita
+        else:
+          pai.direita = atual.direita
+
+      # O nó possui dois filhos
+      else:
+        sucessor = self.get_sucessor(atual)
+
+        if atual == self.raiz:
+          self.raiz = sucessor
+        elif e_esquerda == True:
+          pai.esquerda = sucessor
+        else:
+          pai.direita = sucessor
+
+        sucessor.esquerda = atual.esquerda
+
+      return True
+
+
+
+    def get_sucessor(self, no):
+      pai_sucessor = no 
+      sucessor = no
+      atual = no.direita
+      while atual != None:
+        pai_sucessor = sucessor
+        sucessor = atual
         atual = atual.esquerda
-      # Direita
-      else:
-        e_esquerda = False
-        atual = atual.direita
-      if atual == None:
-        return False
-
-    # O nó a ser apagado é uma folha
-    if atual.esquerda == None and atual.direita == None:
-      if atual == self.raiz:
-        self.raiz = None
-      elif e_esquerda == True:
-        pai.esquerda = None
-      else:
-        pai.direita = None
-
-    # O nó a ser apagado não possui filho na direita
-    elif atual.direita == None:
-      if atual == self.raiz:
-        self.raiz = atual.esquerda
-      elif e_esquerda == True:
-        pai.esquerda = atual.esquerda
-      else:
-        pai.direita = atual.esquerda
-        
-    # O nó a ser apagado não possui filho na esquerda
-    elif atual.esquerda == None:
-      if atual == self.raiz:
-        self.raiz = atual.direita
-      elif e_esquerda == True:
-        pai.esquerda = atual.direita
-      else:
-        pai.direita = atual.direita
+      if sucessor != no.direita:
+        pai_sucessor.esquerda = sucessor.direita
+        sucessor.direita = no.direita
+      return sucessor
 
 
 
@@ -142,3 +170,7 @@ arvore.inserir(89)
 arvore.pesquisar(39)
 arvore.pesquisar(84)
 arvore.pesquisar(100)
+
+arvore.excluir(9)
+arvore.excluir(14)
+arvore.excluir(72)
